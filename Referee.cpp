@@ -1,7 +1,7 @@
 #include "Referee.h"
 
 
- Player* Referee::startGame(Player* player1, Player* player2) {
+ Player* Referee::refGame(Player* player1, Player* player2) {
  char movePlayer1 = player1->makeMove();
  char movePlayer2 = player2->makeMove();
 

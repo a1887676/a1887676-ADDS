@@ -2,14 +2,14 @@
 
 
  Player* Referee::refGame(Player* player1, Player* player2) {
- char movePlayer1 = player1->makeMove();
- char movePlayer2 = player2->makeMove();
+ Move* movePlayer1 = player1->makeMove();
+ Move* movePlayer2 = player2->makeMove();
 
- if (movePlayer1 == movePlayer2) {
+ if (movePlayer1->getName() == movePlayer2->getName()) { 
     return nullptr;
  }
 
- if ((movePlayer1=='R' && movePlayer2=='S') || (movePlayer1=='S' && movePlayer2=='P') || (movePlayer1=='P' && movePlayer2=='R')) {
+ if (movePlayer1->winsAgainst(movePlayer2) == true ) {
     return player1;
  } else {
     return player2;

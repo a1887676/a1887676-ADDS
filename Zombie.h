@@ -8,9 +8,7 @@ class Zombie : public Move {
 
 public:
  bool winsAgainst(Move*opponent);
- std::string getName(){
-    return "Zombie";
- }
+ std::string getName();
 };
 
 #endif

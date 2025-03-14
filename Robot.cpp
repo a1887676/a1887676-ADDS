@@ -1,7 +1,7 @@
 #include "Robot.h"
 #include <string>
 
-bool Monkey::winsAgainst(Move*opponent){
+bool Robot::winsAgainst(Move*opponent){
     std::string opponentMove = opponent->getName();
     if(opponentMove=="Ninja"||opponentMove=="Zombie"){
         return true;

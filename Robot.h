@@ -8,9 +8,7 @@ class Robot : public Move {
 
 public:
  bool winsAgainst(Move*opponent);
- std::string getName(){
-    return "Robot";
- }
+ std::string getName();
 };
 
 #endif

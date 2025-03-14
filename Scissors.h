@@ -8,9 +8,7 @@ class Scissors : public Move {
 
 public:
  bool winsAgainst(Move*opponent);
- std::string getName(){
-    return "Scissors";
- }
+ std::string getName();
 };
 
 #endif

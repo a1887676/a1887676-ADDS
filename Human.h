@@ -12,7 +12,7 @@ public:
  Human();
  Human(std::string name);
 
- char makeMove();
+ Move* makeMove();
  std::string getName();
    
 };

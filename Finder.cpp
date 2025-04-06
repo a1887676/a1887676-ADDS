@@ -21,7 +21,7 @@ vector<int> Finder::findSubstrings(string s1, string s2) {
         
         if (found != string::npos) {
             result.push_back(found);
-            index = found;
+            index = found+1;
         
         } else {
             result.push_back(-1);

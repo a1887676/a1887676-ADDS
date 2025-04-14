@@ -7,7 +7,7 @@ bool RecursiveBinarySearch::search(std::vector<int> list, int element) {
 bool RecursiveBinarySearch::recursive(std::vector<int>& list, int low, int high, int element){
 if(low<=high){
         int mid=low+(high-low)/2;
-    if(list[mid] == target) {
+    if(list[mid] == element) {
         return true;
     } else if(list[mid] < target){
         return recursive(list, mid+1, high);

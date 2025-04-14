@@ -16,7 +16,7 @@ std::stringstream ss(input);
 std::vector<int> list;
 int num;
 
-while(ss>>number) {
+while(ss>>num) {
     list.push_back(num);
 }
 

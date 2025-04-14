@@ -9,10 +9,10 @@ if(low<=high){
         int mid=low+(high-low)/2;
     if(list[mid] == element) {
         return true;
-    } else if(list[mid] < target){
-        return recursive(list, mid+1, high);
+    } else if(list[mid] > element){
+        return recursive(list, low, mid-1, element);
     } else{
-        return recursive(list, low, mid-1);
+        return recursive(list, mid+1, high, element);
      }
 }
   return false; 

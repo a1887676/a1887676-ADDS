@@ -1,7 +1,7 @@
 #include "QuickSort.h"
 
 std::vector<int> QuickSort::sort(std::vector<int> list){
-    recursive(list, 0, list.size()-1,);
+    recursive(list, 0, list.size()-1);
     return list;
 }
 
@@ -22,7 +22,7 @@ int QuickSort::divide(std::vector<int>& list, int low, int high) {
     int i = low - 1;
     for(int j=low;j<high;j++){
         if(list[j]<=pivot){
-            i++
+            i++;
             std::swap(list[i], list[j]);
         }
     }

@@ -2,6 +2,7 @@
 #include <string>
 #include <vector>
 #include <sstream>
+#include <iostream>
 
 #include "QuickSort.h"
 #include "RecursiveBinarySearch.h"
@@ -9,14 +10,14 @@
 int main() {
 
 std::string input;
-std::getline(std::cinn, input);
+std::getline(std::cin, input);
 std::stringstream ss(input);
 
-std::vector<int> list 
+std::vector<int> list;
 int num;
 
 while(ss>>number) {
-    list.push_back(number);
+    list.push_back(num);
 }
 
 QuickSort sort;

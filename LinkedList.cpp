@@ -32,7 +32,7 @@ void LinkedList::insertPosition(int pos, int newNum) {
     }
 
     Node* current = head;
-    for(int i=1; i< (current->link != nullptr) && (pos-1); i++) {
+    for(int i=1; i<(pos-1) && (current->link != nullptr); i++) {
         current = current->link;
     }
 
@@ -54,7 +54,7 @@ bool LinkedList::deletePosition(int pos) {
     }
 
     Node* current=head;
-    for(int i=1; (current->link != nullptr) && (pos-1); i++) {
+    for(int i=1; i<(pos-1) && (current->link != nullptr); i++) {
         current = current->link;
     }
 
@@ -76,7 +76,7 @@ int LinkedList::get(int pos) {
     }
 
     Node* current = head; 
-    for(int i=1; (current->link != nullptr) && (pos-1); i++) {
+    for(int i=1; i<(pos-1) && (current->link != nullptr); i++) {
         current = current->link;
     }
 

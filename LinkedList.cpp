@@ -110,7 +110,7 @@ void LinkedList::printList() {
         std::cout << current->data;
         current=current->link;
 
-        if(current->link != nullptr) {
+        if(current != nullptr) {
             std::cout << " ";
         }
     }

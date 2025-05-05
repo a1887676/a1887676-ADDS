@@ -76,7 +76,7 @@ int LinkedList::get(int pos) {
     }
 
     Node* current = head; 
-    for(int i=1; i<(pos-1) && (current->link != nullptr); i++) {
+    for(int i=1; i<(pos-1) && (current != nullptr); i++) {
         current = current->link;
     }
 

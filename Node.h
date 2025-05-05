@@ -9,3 +9,5 @@ public:
  Node();
  Node(int data);
 };
+
+#endif 

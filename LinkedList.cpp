@@ -31,7 +31,7 @@ void LinkedList::insertPosition(int pos, int newNum) {
         return;
     }
 
-    Node* current = head 
+    Node* current = head;
     for(int i=1; i< (current->link != nullptr) && (pos-1); i++) {
         current = current->link;
     }
@@ -72,7 +72,7 @@ bool LinkedList::deletePosition(int pos) {
 
 int LinkedList::get(int pos) {
     if(pos<1) {
-        return std::numeric_limits<int>::max()
+        return std::numeric_limits<int>::max();
     }
 
     Node* current = head; 
